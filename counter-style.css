@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    
+    font-size: 30px;
+    
+
+    
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgb(73, 251, 207);
+}
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+
+    background-color: rgb(165, 73, 251);
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 60vw;
+    height: 20vh;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+
+    transition: transform 2s ease;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(184, 109, 255);
+    color: rgb(78, 10, 143)
+}
+
+.flip-card-back {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    transform: rotateY(180deg);
+    background-color: rgb(78, 10, 143);
+    color: rgb(73, 251, 207);
+}
+
+.tool {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    color: rgb(184, 109, 255);
+}
+
+.tool div {
+    margin: 2px;
+}
+
+.sign {
+    display: flex;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: royalblue;
+    border-radius: 100%;  
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    width: 20px;
+    
+    color: black;
+    background-color: rgb(184, 109, 255);
+}
+
+
+.reset {
+    width: 40px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 10px;
+    border: none;
+}
+
+#pause {
+    display: none;
+}
+
+.setTime > h2 {
+    font-size: 15px;
+    width: 60px;
+    text-align: center;
+    color: black;
+    background-color: rgb(184, 109, 255);
+}
+
+.setTime-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 260px;
+}
+
+
+
+
