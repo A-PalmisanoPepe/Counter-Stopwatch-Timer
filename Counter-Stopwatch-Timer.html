@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <title>Counter</title>
+        <link rel="icon" href="">
+        <link rel="stylesheet" href="CSS/Style.css">
+        <link rel="stylesheet" href="CSS/Style-tablet-smartphone.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="task-container">
+                <div class="flip-card" id="flip-card-counter">
+                    <div class="flip-card-inner" id="counter">
+                        <div class="flip-card-front" id="front-counter"><h2>COUNTER</h2></div>
+
+                        <div class="flip-card-back" id="counter-container" >
+                            <h2>COUNTER</h2>
+
+                            <div class="tool">
+                                <div class="numbers-container">
+                                    <div class="number counter-number">0</div>
+                                    <div class="number counter-number">0</div>
+                                    <div class="number counter-number">0</div>
+                                    <h2>.</h2>
+                                    <div class="number counter-number">0</div> 
+                                    <div class="number counter-number">0</div>
+                                    <div class="number counter-number">0</div>
+                                    <h2>.</h2>
+                                    <div class="number counter-number">0</div> 
+                                    <div class="number counter-number">0</div>
+                                    <div class="number counter-number">0</div>
+                                </div>
+
+                                <div class="buttons-container">
+                                    <div class="sign" ><img src="images/plus.png" id="plus"></div>
+                                    
+                                    <div class='sign' ><img src="images/minus.png" id="minus"></div>
+                                    
+                                    <div class="sign"><img src="images/reset.png" id="reset-counter"></div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" id="flip-card-stopwatch">
+                    <div class="flip-card-inner" id="stopwatch">
+                        <div class="flip-card-front" id="front-stopwatch"><h2>STOPWATCH</h2></div>
+
+                        <div class="flip-card-back" id="stopwatch-container">
+                            <h2>STOPWATCH</h2>
+
+                            <div class="tool">
+                                <div class="numbers-container">
+                                    <div class="number number-stopwatch">0</div>
+                                    <div class="number number-stopwatch">0</div>
+                                    <h2>:</h2>
+                                    <div class="number number-stopwatch">0</div>
+                                    <div class="number number-stopwatch">0</div>
+                                    <h2>:</h2>
+                                    <div class="number number-stopwatch">0</div>
+                                    <div class="number number-stopwatch">0</div>
+                                    <h2>:</h2>
+                                    <div class="number number-stopwatch">0</div>
+                                    <div class="number number-stopwatch">0</div>
+                                </div>
+                                
+                                <div class="buttons-container">
+                                    <div class='sign' id="stopwatch-play-pause" >
+                                        <img src="images/play.png" class="play" id="play-stopwatch">
+                                        
+                                        <img src="images/pause.png" class="pause" id="pause-stopwatch">
+                                    </div>
+
+                                    <div class="sign"><img src="images/reset.png" id="reset-stopwatch"></div>
+                                    </div>
+                                </div>
+
+                                
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card" id="flip-card-timer">
+                    <div class="flip-card-inner" id="timer">
+                        <div class="flip-card-front" id="front-timer"><h2>TIMER</h2></div>
+                        
+                        <div class="flip-card-back" id="timer-container">
+                            <h2>TIMER</h2>
+            
+                            <div class="tool">
+                                
+                                <div class="numbers-container">
+                                    <div class="number timer-number">0</div>
+                                    <div class="number timer-number">0</div>
+                                    <h2>:</h2>
+                                    <div class="number timer-number">0</div>
+                                    <div class="number timer-number">0</div>
+                                    <h2>:</h2>
+                                    <div class="number timer-number">0</div>
+                                    <div class="number timer-number">0</div>
+                                </div>
+                                
+                                <div class="buttons-container">
+                                    <div class='sign' id="timer-play-pause" >
+                                        <img src="images/play.png" class="play" id="play-timer">
+                                            
+                                        <img src="images/pause.png" class="pause" id="pause-timer">
+                                    </div>
+                                    <div class="sign"><img src="images/reset.png" id="reset-timer"></div>
+                                </div>
+
+                                <div id="setTime-container" >
+                                    <div class="setTime" ><h2 id="s1">+1 s</h2></div>
+                                    <div class="setTime"><h2 id="s10">+10 s</h2></div>
+                                    <div class="setTime"><h2 id="s30">+30 s</h2></div>
+                                    <div class="setTime"><h2 id="m1">+1 m</h2></div>
+                                    <div class="setTime"><h2 id="m10">+10 m</h2></div>
+                                    <div class="setTime"><h2 id="m30">+30 m</h2></div>
+                                    <div class="setTime"><h2 id="h1">+1 h</h2></div>
+                                    <div class="setTime"><h2 id="h2">+2 h</h2></div>
+                                </div>
+                                
+                            </div>
+            
+                                
+                        </div>
+                    </div>
+                </div>    
+            </div>        
+        </div>
+
+        <script src="Javascript/Animazioni.js"></script>
+        <script src="Javascript/Counter.js"></script>
+        <script src="Javascript/Stopwatch.js"></script>
+        <script src="Javascript/Timer.js"></script>
+        
+
+    </body>
+</html>
