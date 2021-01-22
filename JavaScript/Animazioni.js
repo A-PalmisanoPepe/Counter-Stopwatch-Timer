@@ -8,22 +8,22 @@ let innerTimer = document.querySelector('#timer');
 
 function turnFlipcardStopwatch() {
     innerStopwatch.classList.add('flip-card-inner-active');
-    innerStopwatch.classList.remove('flip-card-inner');
+    innerStopwatch.classList.remove('flip-card-inner-responsive');
     innerTimer.classList.remove('flip-card-inner-active');
-    innerTimer.classList.add('flip-card-inner');
+    innerTimer.classList.add('flip-card-inner-responsive');
     innerCounter.classList.remove('flip-card-inner-active');
-    innerCounter.classList.add('flip-card-inner');
+    innerCounter.classList.add('flip-card-inner-responsive');
 }
 
 flipCardStopwatch.addEventListener('click', turnFlipcardStopwatch);
 
 function turnFlipcardTimer() {
     innerTimer.classList.add('flip-card-inner-active');
-    innerTimer.classList.remove('flip-card-inner');
+    innerTimer.classList.remove('flip-card-inner-responsive');
     innerCounter.classList.remove('flip-card-inner-active');
-    innerCounter.classList.add('flip-card-inner');
+    innerCounter.classList.add('flip-card-inner-responsive');
     innerStopwatch.classList.remove('flip-card-inner-active');
-    innerStopwatch.classList.add('flip-card-inner');
+    innerStopwatch.classList.add('flip-card-inner-responsive');
 }
 
 flipCardTimer.addEventListener('click', turnFlipcardTimer);
@@ -31,11 +31,11 @@ flipCardTimer.addEventListener('click', turnFlipcardTimer);
 function turnFlipcardCounter() {
     
     innerCounter.classList.add('flip-card-inner-active');
-    innerCounter.classList.remove('flip-card-inner');
+    innerCounter.classList.remove('flip-card-inner-responsive');
     innerTimer.classList.remove('flip-card-inner-active');
-    innerTimer.classList.add('flip-card-inner');
+    innerTimer.classList.add('flip-card-inner-responsive');
     innerStopwatch.classList.remove('flip-card-inner-active');
-    innerStopwatch.classList.add('flip-card-inner');
+    innerStopwatch.classList.add('flip-card-inner-responsive');
 }
 
 flipCardCounter.addEventListener('click', turnFlipcardCounter);

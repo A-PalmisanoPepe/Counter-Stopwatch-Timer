@@ -48,23 +48,7 @@ img {
     perspective: 1000px;
 }
 
-.flip-card-inner {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    
 
-    transition: transform 2s ease;
-    transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner { 
-    transform: rotateY(180deg);
-}
 
 .flip-card-front, .flip-card-back {
     position: absolute;
@@ -171,6 +155,32 @@ img {
     cursor: pointer;
 }
 
+@media only screen and (min-width: 991px) {
+.flip-card-inner {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 2s ease;
+    transform-style: preserve-3d;
+}
 
+.flip-card:hover .flip-card-inner { 
+    transform: rotateY(180deg);
+}
 
+}
 
+@media only screen and (max-height: 500px) {
+    .container {
+        height: unset;
+    }
+
+    .task-container {
+        height: 500px;
+        margin: 30px auto 30px auto;
+    }
+}
