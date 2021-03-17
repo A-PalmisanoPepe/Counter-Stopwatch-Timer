@@ -53,14 +53,14 @@ function onPlayTimer() {
     }, 1000);
 }
 
-function cellManagerSumTimeData(numberOfCells) {
+function cellsManagerSumTimeData(numberOfCells) {
     if (timerNumbers[numberOfCells - 1] > 9) {
         timerNumbers[numberOfCells - 1] = 0;
         timerNumbers[numberOfCells - 2]++;
         if (timerNumbers[numberOfCells - 2] > 5) {
             timerNumbers[numberOfCells - 2] = 0;
             timerNumbers[numberOfCells - 3]++;
-            return cellManagerSumTimeData(numberOfCells - 2);
+            return cellsManagerSumTimeData(numberOfCells - 2);
         }
     }
 }
@@ -69,7 +69,7 @@ function setTimer(indexCell, numToAdd) {
     
     for(let i=0; i < numToAdd; i++) {
         timerNumbers[indexCell]++;
-        cellManagerSumTimeData(indexCell + 1);
+        cellsManagerSumTimeData(indexCell + 1);
     }
 }
 
