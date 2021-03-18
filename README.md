@@ -4,6 +4,8 @@ The idea behind the project is to use the Javascript language to create a tool t
 * a counter
 * a stopwatch
 * a timer
+
+
 A useful program with graphics that make it pleasant to use.
 ## Getting Started 
 To get a local copy up and running clone the repo
