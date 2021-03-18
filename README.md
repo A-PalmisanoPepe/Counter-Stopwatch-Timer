@@ -6,7 +6,7 @@ The idea behind the project is to use Javascript to create a tool that has:
 * a timer
 
 
-A useful program with graphics that make it pleasant to use.
+A useful program with a nice design.
 ## Getting Started 
 To get a local copy up and running clone the repo
 
