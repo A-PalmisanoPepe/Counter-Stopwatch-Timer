@@ -1,6 +1,6 @@
 # counter-stopwatch-timer
 ## About
-The idea behind the project is to use the Javascript language to create a tool that has:
+The idea behind the project is to use Javascript to create a tool that has:
 * a counter
 * a stopwatch
 * a timer
