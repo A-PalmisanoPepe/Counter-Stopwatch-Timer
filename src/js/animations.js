@@ -1,4 +1,5 @@
 // Animazioni flipcard per smartphone e tablet
+
 let flipCardCounter = document.querySelector('#flip-card-counter');
 let innerCounter = document.querySelector('#counter');
 let flipCardStopwatch = document.querySelector('#flip-card-stopwatch');

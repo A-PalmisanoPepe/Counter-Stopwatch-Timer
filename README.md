@@ -35,7 +35,7 @@ A useful app with a nice design.
 
 ## Try it out
 
-Take a look at my app - https://project-counter.web.app/
+Take a look at my app - https://project-counter.web.app
 
 
 ## Getting Started 
